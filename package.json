@@ -1,0 +1,22 @@
+{
+  "name": "halima",
+  "version": "1.0.0",
+  "description": "halima courses",
+  "main": "script.js",
+  "scripts": {
+    "dev-server": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joel-nambala/halima.git"
+  },
+  "author": "joel nambala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joel-nambala/halima/issues"
+  },
+  "homepage": "https://github.com/joel-nambala/halima#readme",
+  "devDependencies": {
+    "concat": "^1.0.3"
+  }
+}
