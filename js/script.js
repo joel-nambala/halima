@@ -66,6 +66,32 @@ navToggle.addEventListener('click', function () {
   else linksContainer.style.height = 0;
 });
 
-linksContainer.addEventListener('click', function () {
-  linksContainer.style.height = 0;
+//////////////////////////////////////////////
+// Smooth scroll
+const navLink = document.querySelectorAll('.nav__link');
+navLink.forEach(function (link) {
+  link.addEventListener('click', function (e) {
+    // Prevent default
+    e.preventDefault();
+
+    // Navigate to a specific spot
+    const id = e.currentTarget.getAttribute('href').slice(1);
+    const element = document.getElementById(id);
+
+    // Calculate the heights
+    const navHeight = navigation.getBoundingClientRect().height;
+    const containerHeight = linksContainer.getBoundingClientRect().height;
+    const fixedNav = navigation.classList.contains('sticky');
+
+    let position = element.offsetTop - navHeight;
+
+    if (!fixedNav) position = position - navHeight;
+    if (navHeight > 82) position = position + containerHeight;
+
+    window.scrollTo({
+      left: 0,
+      top: position,
+    });
+    linksContainer.style.height = 0;
+  });
 });
