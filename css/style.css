@@ -395,6 +395,15 @@ FOOTER
   line-height: 1.4;
 }
 
+.media__paragraph:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+
+.media__paragraph a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
 .media__list {
   display: flex;
   list-style: none;
