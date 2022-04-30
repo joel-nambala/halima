@@ -5,7 +5,7 @@
 .btn {
   border: none;
   border-radius: 100px;
-  padding: 0.8rem 1.8rem;
+  padding: 1.4rem 2.4rem;
   font-size: 1.6rem;
   transition: all 0.5s ease;
 }
@@ -21,11 +21,24 @@
 .btn-primary {
   background-color: var(--bg-color);
   color: var(--text-white);
+  text-decoration: none;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-top: 3rem;
 }
 
 .heading-primary {
   color: var(--text-white);
-  font-size: 4rem;
+  font-size: 4.2rem;
   margin-bottom: 1.5rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  letter-spacing: 1.4rem;
+}
+
+.sticky {
+  position: fixed;
+  background-color: var(--bg-color);
+  width: 100%;
+  top: 0;
+  z-index: 99;
 }

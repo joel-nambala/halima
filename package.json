@@ -4,7 +4,10 @@
   "description": "halima courses",
   "main": "script.js",
   "scripts": {
-    "dev-server": "live-server"
+    "start": "live-server",
+    "concat": "concat -o css/style.concat.css css/style.css css/utlis.css css/queries.css",
+    "compress": "node-sass css/style.concat.css css/style.min.css --output-style compressed",
+    "build": "npm-run-all concat compress"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,9 @@
   },
   "homepage": "https://github.com/joel-nambala/halima#readme",
   "devDependencies": {
-    "concat": "^1.0.3"
-  }
+    "concat": "^1.0.3",
+    "node-sass": "^7.0.1",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {}
 }

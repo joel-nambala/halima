@@ -18,6 +18,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <script defer src="js/script.js"></script>
     <title>Halima Courses</title>
   </head>
@@ -27,20 +28,24 @@
         <div class="container">
           <div class="nav">
             <div class="nav__logo">LOGO</div>
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="#header" class="nav__link">Home</a>
-              </li>
-              <li class="nav__item">
-                <a href="#about" class="nav__link">About</a>
-              </li>
-              <li class="nav__item">
-                <a href="#sessions" class="nav__link">Sessions</a>
-              </li>
-              <li class="nav__item">
-                <a href="#contacts" class="nav__link">Contacts</a>
-              </li>
-            </ul>
+            <i class="fa-solid fa-bars nav__bars"></i>
+            <div class="links__container">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#header" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#about" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#sessions" class="nav__link">Sessions</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#contacts" class="nav__link">Contacts</a>
+                </li>
+                <li class="nav__item">&nbsp;</li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -48,24 +53,10 @@
       <div class="container">
         <div class="hero">
           <div class="hero__content">
-            <h1 class="hero__heading heading-primary">
-              Welcome to Halima Courses
-            </h1>
-            <p class="hero__paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-              aliquid praesentium minima unde libero quas, dignissimos id
-              blanditiis obcaecati at?
-            </p>
-            <button class="btn btn-primary hero__button">Read More</button>
+            <h1 class="hero__heading heading-primary">Halima Courses</h1>
+            <h2 class="hero__paragraph">Is where reality happens</h2>
+            <a href="#about" class="btn btn-primary hero__button">Read More</a>
           </div>
-
-          <figure class="hero__image">
-            <img
-              src="./img/certificate.png"
-              alt="certificate"
-              class="hero__photo"
-            />
-          </figure>
         </div>
       </div>
     </header>
@@ -211,12 +202,13 @@
           <ul class="contact__list">
             <li class="contact__item">
               <a href="#" class="contact__link"
-                >Shajma industries | HJ 26 street, Mombasa</a
+                ><i class="fa-solid fa-location-dot"></i> Shajma industries | HJ
+                26 street, Mombasa</a
               >
             </li>
             <li class="contact__item">
               <a href="mailto:joel.n.wanjala@gmail.com" class="contact__link"
-                >halimagonah@gmail.com</a
+                ><i class="fa-solid fa-envelope"></i> halimagonah@gmail.com</a
               >
             </li>
           </ul>
@@ -285,7 +277,9 @@
             </ul>
           </div>
         </div>
-        <p class="copyright">Copyright, &copy; 2022</p>
+        <p class="copyright">
+          Copyright, Halima courses &copy; <span class="copyright-year"></span>.
+        </p>
         <p class="copyright">All rights reserved</p>
       </div>
     </footer>
