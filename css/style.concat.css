@@ -59,9 +59,8 @@ HEADER
   position: relative;
 }
 
-.nav__logo {
-  font-size: 2rem;
-  color: var(--text-white);
+.nav__image {
+  width: 7%;
 }
 
 .nav__bars {
@@ -143,9 +142,9 @@ ABOUT
 }
 
 .about__photo {
-  width: 90%;
+  width: 80%;
   position: absolute;
-  top: 35rem;
+  top: 40rem;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -156,7 +155,7 @@ ABOUT
   width: 30rem;
   position: absolute;
   top: 55rem;
-  left: 30rem;
+  left: 20rem;
 }
 
 .about__heading {
@@ -193,7 +192,7 @@ ABOUT
   width: 30rem;
   position: absolute;
   top: 65rem;
-  right: 6rem;
+  right: 8rem;
 }
 
 .about__tertiary {
