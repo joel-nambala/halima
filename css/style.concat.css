@@ -233,10 +233,9 @@ SESSIONS
 }
 
 .card {
-  background-color: var(--text-white);
+  background-color: rgba(255, 255, 255, 0.6);
   /* width: 25%; */
   padding: 2rem 1rem;
-  opacity: 0.7;
   border-radius: 0.3rem;
   transition: all 0.5s ease;
 }
@@ -249,7 +248,7 @@ SESSIONS
   text-transform: uppercase;
   font-size: 1.5rem;
   margin-bottom: 0.8rem;
-  color: #000;
+  color: #222;
 }
 
 .card__description {
