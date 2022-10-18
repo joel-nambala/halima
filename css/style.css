@@ -79,7 +79,7 @@ HEADER
 }
 
 .nav__item:not(:last-child) {
-  margin-right: 2rem;
+  margin-right: 4rem;
 }
 
 .nav__link {
@@ -88,12 +88,13 @@ HEADER
   text-transform: uppercase;
   font-size: 1.5rem;
   color: #fff;
+  padding: 0.4rem 0;
+  border-bottom: 2px solid transparent;
   transition: all 0.4s ease;
 }
 
 .nav__link:hover {
-  background-color: #a61e4d;
-  padding: 0.4rem 1.2rem;
+  border-bottom: 2px solid #700527;
 }
 
 .hero__content {
